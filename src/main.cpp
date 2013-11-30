@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <queue>
-
+#include <string>
 #include <SFML/Graphics.hpp>
 
 #include "gamestatemanager.h"
@@ -17,7 +17,7 @@ int main( int argc, char *argv[] ) {
     sf::RenderWindow app;
 
     sf::VideoMode vmode = sf::VideoMode::getDesktopMode();
-    app.create( vmode, "sfmleton", sf::Style::Fullscreen );
+    app.create( vmode, "sfmleton");
 
     if( !app.isOpen() ) {
         cerr << "Error creating SFML renderwindow" << endl;
