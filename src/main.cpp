@@ -1,18 +1,18 @@
 #include <cstdlib>
 #include <iostream>
 #include <queue>
-#include <string>
 #include <SFML/Graphics.hpp>
 
 #include "gamestatemanager.h"
 #include "teststate.h"
-using namespace std;
+#include "resourcemanager.h"
 
+using namespace std;
 
 queue<sf::Event> getInput( sf::RenderWindow &app );
 
-
 int main( int argc, char *argv[] ) {
+    
     game::state::manager man;
     sf::RenderWindow app;
 
